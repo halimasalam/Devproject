@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Thaw Success Global Limited</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <script src="https://kit.fontawesome.com/87db40d50b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <header id="index-header">
+            <a href="index.html">
+                <img class="companyLogo" src="images/logo.jpeg" alt="company logo">
+            </a>
+            <h1 class="companyName"><b>THAW SUCCESS GLOBAL LIMITED</b></h1>
+
+            <nav>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="#contact">Contact Us</a>
+                </ul>
+            </nav>
+        </header>
+
+        
+
+        <main>
+            <section class="introduction1">
+                <hr class="styled-line top">
+                <div class="intro1-container">
+                    <div class="intro1img">
+                        <div class="intro1">
+                            <h2> Welcome to Our Agro-Commodities Export Company</h2>
+                            <p id="paraone"> Your source for seamless exportation of agro-commodities.</p>
+                            <p id="paratwo"> We specialize in all aspects of exportation of agro-commodities (Cashew nuts, sesame seeds, cocoa, Ginger, etc) and other essential commodities from Nigeria to any part of the world.</p>
+                            <!-- <img id="intro2img" src="images/backgroundimage.jpeg" alt="Services images"> -->
+                        </div>
+                    </div>
+                </div>  
+                <hr class="styled-line bottom">        
+
+                <script>
+                    const images = [
+                        'images/backgroundimage.jpeg',
+                        'images/exportagroimg.webp',
+                        'images/exportimage1.jpeg',
+                        'images/exportimage2.jpeg',
+                        'images/exportagroimg1.webp'
+                    ];
+
+                    let currentImage = 0;
+                    const introContainer = document.querySelector('.intro1-container');
+
+                    function setBackgroundImage() {
+                        introContainer.style.backgroundImage = `url(${images[currentImage]})`;
+                        currentImage = (currentImage + 1) % images.length;
+                    }
+
+                    setInterval(setBackgroundImage, 3000);
+                    setBackgroundImage(); // Call it once to set the initial background image
+                </script>
+            </section>
+
+           
+
+            <section class="introduction2">
+                <div class="intro2-container">
+                    <div class="intro2 objectives">
+                        <h2> Our objectives</h2>
+                        <!-- <ul class="obj-list"> -->
+                            <p>To provide clients satisfaction<p></p>
+                            <p>To develop a quality assurance system that helps us provide impeccable service offerings to all our clients.<p>
+                            <p>To ensure that our clients get maximum value for working with us.<p>
+                            <p>To develop a growing list of satisfied and returning clients from across the world.<p>
+                        <!-- </ul> -->
+                    </div>
+
+                    <div class="intro2 contact">
+                        <h2 id="contact">Contact Us</h2>
+                        <p>If you have any inquiries or need more information, feel free to get in touch with us.</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: +2347063382283</p>
+                        <p><i class="fa-solid fa-at"></i> email: thawsuccessglobal@gmail.com</p>
+                        <p><i class="fa-brands fa-facebook"></i> facebook page</p>
+                        <p><i class="fa-brands fa-instagram"></i> instagram</p>
+                        <p><i class="fa-brands fa-twitter"></i> twitter</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        
+        <section class="footer">
+            <footer>
+                <p class="goal"> Our goal is to always exceed our clients' expectations and build a network of satisfied and returning clients.</p>
+                <p class="address"><i class="fa-solid fa-location-dot"></i> 7A Randle Avenue, Apapa, Lagos </p>
+                <p class="copyright">&copy; 2023 Thaw Success Global Limited</p>
+            </footer>
+
+        </section>
+
+    </body>
+</html>
+<!-- 
+   </section> -->
+        
+

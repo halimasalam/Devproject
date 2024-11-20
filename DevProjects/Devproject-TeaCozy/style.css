@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+    margin: 0 auto;
+    color: seashell;
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+header {
+    background-color: black;
+    border-bottom-color: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 69px;
+    margin-top: -1.4em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+header img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    text-align: right;
+    float: right;
+    width: 60%;
+}
+
+nav ul a {
+    text-decoration: underline;
+    font-size: 22px;
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    color: seashell;
+    opacity: 0.9;
+    padding: 0.5em;
+}
+
+
+/* main{
+    position: relative;
+    z-index: 1;
+} */
+
+.missionContainer {
+    background: url('images/img-mission-background.webp');
+    background-size: cover; 
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+.mission {
+    background-color: black;
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    color: seashell;
+    opacity: 0.9;
+    text-align: center;
+    padding: 0.4em 9.75em 0.4em 9.75em;
+ }
+
+ .monthly {
+    text-align: center;  
+ }
+
+ .featuredTeaContainer {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+ }
+
+ .featuredImg {
+    max-height: 200px;
+    width: 300px;
+ }
+
+ figcaption {
+    text-align: center;
+    padding-top: 1em;
+ }
+ 
+ 
+ .locationsContainer {
+    background: url('images/img-locations-background.webp');
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+ }
+
+ .location {
+    text-align: center;  
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    padding-top: 4em;
+    margin-right: -2em;
+    
+ } 
+
+ .contact {
+    text-align: center;  
+ } 

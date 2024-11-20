@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["dom", "es2016"],
+    "jsx": "react",
+    "baseUrl": "./src/",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+  },
+  "include": ["./src/**/*", "src/types/custom.d.ts"]
+}
